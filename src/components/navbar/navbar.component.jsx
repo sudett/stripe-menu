@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useGlobalContext } from "../../context";
+
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import { FaBars } from "react-icons/fa";
@@ -15,6 +17,8 @@ import {
 } from "./navbar.styles";
 
 const Navbar = () => {
+  const { openSidebar } = useGlobalContext();
+
   return (
     <Navigation>
       <Logo />
@@ -28,7 +32,7 @@ const Navbar = () => {
 
       <ButtonSignin>Sign in</ButtonSignin>
 
-      <ButtonToggle>
+      <ButtonToggle onClick={openSidebar}>
         <FaBars />
       </ButtonToggle>
     </Navigation>
