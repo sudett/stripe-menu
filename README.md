@@ -1,3 +1,5 @@
+In this app i practiced context API and react router dom, the trickiest part of the app was positioning the submenu component in the correct location and closing this component.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
