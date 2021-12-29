@@ -34,7 +34,7 @@ const Sidebar = () => {
               <Submenu>
                 {links.map(({ label, icon, url }, index) => (
                   <SubmentItem key={index}>
-                    <SubmenuLink href={url}>
+                    <SubmenuLink to={url}>
                       {icon}
                       {label}
                     </SubmenuLink>

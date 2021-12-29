@@ -23,7 +23,7 @@ const Submenu = () => {
       <NavSubmenu gridCol={gridCol}>
         {links.map(({ label, icon, url }, index) => (
           <li key={index}>
-            <NavSubmenuLink href={url}>
+            <NavSubmenuLink to={url}>
               {icon}
               {label}
             </NavSubmenuLink>

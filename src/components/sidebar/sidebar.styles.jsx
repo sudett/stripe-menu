@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
   position: absolute;
@@ -73,7 +74,7 @@ export const SubmentItem = styled.li`
   flex-basis: 50%;
 `;
 
-export const SubmenuLink = styled.a`
+export const SubmenuLink = styled(Link)`
   color: var(--clr-grey-4);
   display: flex;
   align-items: center;
