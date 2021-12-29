@@ -67,7 +67,8 @@ code {
     monospace;
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
 }
 

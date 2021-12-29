@@ -5,6 +5,7 @@ export const HeaderContainer = styled.div`
   position: relative;
   padding: 0 5rem;
   height: 100vh;
+  overflow-x: hidden;
 
   &::before {
     content: "";

@@ -17,15 +17,21 @@ import {
 } from "./navbar.styles";
 
 const Navbar = () => {
-  const { openSidebar } = useGlobalContext();
+  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
 
   return (
-    <Navigation>
+    <Navigation
+      onMouseOver={(e) => {
+        if (!e.target.classList.contains("btn")) closeSubmenu();
+      }}
+    >
       <Logo />
       <NavigationList>
         {sublinks.map(({ page }, index) => (
           <li key={index}>
-            <NavigationButton>{page}</NavigationButton>
+            <NavigationButton className="btn" onMouseOver={openSubmenu}>
+              {page}
+            </NavigationButton>
           </li>
         ))}
       </NavigationList>
